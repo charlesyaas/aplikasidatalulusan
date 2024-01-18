@@ -1,0 +1,24 @@
+
+<div id="report-title"><h1>Akun</h1></div>
+<table className="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Nama Lengkap</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Photo</th>
+            <th>Level</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% records.forEach(function(record){ %>
+        <tr>
+            <td><%= record.nama_lengkap %></td>
+            <td><%= record.username %></td>
+            <td><%= record.email %></td>
+            <td><%= record.photo %></td>
+            <td><%= record.level %></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
